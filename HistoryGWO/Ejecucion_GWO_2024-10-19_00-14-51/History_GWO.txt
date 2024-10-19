@@ -1,0 +1,74 @@
+*************************
+Parametros de la ejecucion
+Numero de lobos: 4
+Numero de iteraciones: 4
+*************************
+**************************************************
+Mejor solucion antes de actualziar los parametros
+**************************************************
+Best wolf: {'num_layers': 4, 'num_filters': 2, 'batch_norm': 'false', 'epochs': 4, 'batch_size': 16, 'lr': 0.0046}
+Best Average Accuracy: 61.75%
+Best Average Loss: 0.6568
+Best Recall: 0.6175
+Best Specificity: 0.5800
+Best F1 Score: 0.6170
+Best AUC: 0.6175
+Best Execution Time: 3.18 seconds
+
+
+Iteration 1:
+Best wolf: {'num_layers': 4, 'num_filters': 13, 'batch_norm': 'true', 'epochs': 3, 'batch_size': 6, 'lr': 0.0016186656367485463}
+Best Average Accuracy: 61.17%
+Best Average Loss: 0.7801
+Best Recall: 0.6117
+Best Specificity: 0.5067
+Best F1 Score: 0.6073
+Best AUC: 0.6117
+Best Execution Time: 3.43 seconds
+
+
+Iteration 2:
+Best wolf: {'num_layers': 2, 'num_filters': 9, 'batch_norm': 'false', 'epochs': 2, 'batch_size': 28, 'lr': 0.003284333053288473}
+Best Average Accuracy: 51.50%
+Best Average Loss: 1.2732
+Best Recall: 0.5150
+Best Specificity: 0.0500
+Best F1 Score: 0.3812
+Best AUC: 0.5150
+Best Execution Time: 1.97 seconds
+
+
+Iteration 3:
+Best wolf: {'num_layers': 2, 'num_filters': 13, 'batch_norm': 'false', 'epochs': 1, 'batch_size': 37, 'lr': 0.0028598807369761645}
+Best Average Accuracy: 50.00%
+Best Average Loss: 4.8010
+Best Recall: 0.5000
+Best Specificity: 0.0000
+Best F1 Score: 0.3333
+Best AUC: 0.5000
+Best Execution Time: 1.02 seconds
+
+
+Iteration 4:
+Best wolf: {'num_layers': 2, 'num_filters': 14, 'batch_norm': 'true', 'epochs': 1, 'batch_size': 33, 'lr': 0.0029124839681766413}
+Best Average Accuracy: 65.50%
+Best Average Loss: 0.6592
+Best Recall: 0.6550
+Best Specificity: 0.9000
+Best F1 Score: 0.6330
+Best AUC: 0.6550
+Best Execution Time: 1.13 seconds
+
+******************
+Mejor solucion
+******************
+Best wolf: {'num_layers': 2, 'num_filters': 14, 'batch_norm': 'true', 'epochs': 1, 'batch_size': 33, 'lr': 0.0029124839681766413}
+Best Average Accuracy: 65.50%
+Best Average Loss: 0.6592
+Best Recall: 0.6550
+Best Specificity: 0.9000
+Best F1 Score: 0.6170
+Best AUC: 0.6550
+Best Execution Time: 1.13 seconds
+
+Ejeucion terminada
