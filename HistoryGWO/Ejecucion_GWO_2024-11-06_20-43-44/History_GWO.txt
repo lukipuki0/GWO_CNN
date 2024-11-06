@@ -1,0 +1,63 @@
+*************************
+Parametros de la ejecucion
+Numero de lobos: 5
+Numero de iteraciones: 3
+*************************
+**************************************************
+Mejor solucion antes de actualziar los parametros
+**************************************************
+Best wolf: {'num_layers': 2, 'num_filters': 6, 'batch_norm': 'false', 'epochs': 4, 'batch_size': 16, 'lr': 0.0048}
+Best Average Accuracy: 56.25%
+Best Average Loss: 2.0011
+Best Recall: 0.5625
+Best Specificity: 0.4600
+Best F1 Score: 0.5579
+Best AUC: 0.5625
+Best Execution Time: 3.59 seconds
+
+
+Iteration 1:
+Best wolf: {'num_layers': 5, 'num_filters': 4, 'batch_norm': 'true', 'epochs': 7, 'batch_size': 1, 'lr': 0.0001}
+Best Average Accuracy: 66.50%
+Best Average Loss: 0.6253
+Best Recall: 0.6650
+Best Specificity: 0.8586
+Best F1 Score: 0.6520
+Best AUC: 0.6650
+Best Execution Time: 8.69 seconds
+
+
+Iteration 2:
+Best wolf: {'num_layers': 4, 'num_filters': 15, 'batch_norm': 'true', 'epochs': 4, 'batch_size': 45, 'lr': 0.01}
+Best Average Accuracy: 50.62%
+Best Average Loss: 17.3323
+Best Recall: 0.5062
+Best Specificity: 0.5975
+Best F1 Score: 0.5021
+Best AUC: 0.5062
+Best Execution Time: 3.81 seconds
+
+
+Iteration 3:
+Best wolf: {'num_layers': 3, 'num_filters': 11, 'batch_norm': 'true', 'epochs': 1, 'batch_size': 53, 'lr': 0.009300770392262929}
+Best Average Accuracy: 55.50%
+Best Average Loss: 0.9324
+Best Recall: 0.5550
+Best Specificity: 0.2500
+Best F1 Score: 0.5094
+Best AUC: 0.5550
+Best Execution Time: 0.91 seconds
+
+******************
+Mejor solucion
+******************
+Best wolf: {'num_layers': 5, 'num_filters': 4, 'batch_norm': 'true', 'epochs': 7, 'batch_size': 1, 'lr': 0.0001}
+Best Average Accuracy: 66.50%
+Best Average Loss: 0.6253
+Best Recall: 0.6650
+Best Specificity: 0.8586
+Best F1 Score: 0.5579
+Best AUC: 0.6650
+Best Execution Time: 8.69 seconds
+
+Ejeucion terminada

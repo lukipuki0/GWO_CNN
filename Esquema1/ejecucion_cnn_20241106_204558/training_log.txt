@@ -1,0 +1,15 @@
+Training Log
+=============
+Epoch 1/3, Training Loss: 1.2156, Validation Loss: 0.7489, Validation Accuracy: 50.00%
+Epoch 2/3, Training Loss: 1.5258, Validation Loss: 0.6630, Validation Accuracy: 60.00%
+Epoch 3/3, Training Loss: 1.1259, Validation Loss: 0.6517, Validation Accuracy: 60.00%
+
+Final Results
+Final Average Validation Loss: 0.6879
+Final Average Validation Accuracy: 56.67%
+Recall: 0.5667, Specificity: 0.5367, F1 Score: 0.5663, AUC: 0.5667
+Total Execution Time: 00:00:02 (hh:mm:ss)
+
+Confusion Matrix:
+[[161 139]
+ [121 179]]
