@@ -1,0 +1,5 @@
+*************************
+Parametros de la ejecucion
+Numero de lobos: 4
+Numero de iteraciones: 4
+*************************
