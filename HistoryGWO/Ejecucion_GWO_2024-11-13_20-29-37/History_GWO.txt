@@ -1,0 +1,28 @@
+*************************
+Parametros de la ejecucion
+Numero de lobos: 4
+Numero de iteraciones: 2
+*************************
+**************************************************
+Mejor solucion antes de actualziar los parametros
+**************************************************
+Best wolf: {'num_layers': 3, 'num_filters': 6, 'batch_norm': 'true', 'epochs': 4, 'batch_size': 16, 'lr': 0.001}
+Best Average Accuracy: 57.38%
+Best Average Loss: 0.7972
+Best Recall: 0.5737
+Best Specificity: 0.6000
+Best F1 Score: 0.5735
+Best AUC: 0.5737
+Best Execution Time: 3.75 seconds
+
+
+Iteration 1:
+Best wolf: {'num_layers': 3, 'num_filters': 5, 'batch_norm': 'false', 'epochs': 3, 'batch_size': 9, 'lr': 0.007070752004061502}
+Best Average Accuracy: 56.83%
+Best Average Loss: 0.8200
+Best Recall: 0.5683
+Best Specificity: 0.6167
+Best F1 Score: 0.5673
+Best AUC: 0.5683
+Best Execution Time: 2.95 seconds
+
