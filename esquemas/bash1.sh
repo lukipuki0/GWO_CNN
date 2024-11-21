@@ -17,7 +17,7 @@ module load cudnn/8.2.1
 
 # Crear un entorno virtual si no existe
 if [ ! -d "$HOME/envs/adam_env" ]; then
-    conda create -n adam_env python=3.8 -y
+    conda create -n adam_env python=3.10 -y
 fi
 
 # Activar el entorno virtual

@@ -1,3 +1,6 @@
+#-*- coding: utf-8 -*-
+#**
+
 import numpy as np
 from scipy.stats import norm
 from scipy.special import gamma
@@ -101,15 +104,15 @@ def train_cnn_model(num_conv_layers, base_filter_value, use_batch_norm, lr, batc
 
 
     # Cambia las rutas para que apunten correctamente a tu PC
-    train_path = r'C:\Users\Abduzcan0\Desktop\GWO_CNN\dataset_experimental\train'
-    valid_path = r'C:\Users\Abduzcan0\Desktop\GWO_CNN\dataset_experimental\valid'
-    test_path  = r'C:\Users\Abduzcan0\Desktop\GWO_CNN\dataset_experimental\test'
+    #train_path = r'C:\Users\Abduzcan0\Desktop\GWO_CNN\dataset_experimental\train'
+    #valid_path = r'C:\Users\Abduzcan0\Desktop\GWO_CNN\dataset_experimental\valid'
+    #test_path  = r'C:\Users\Abduzcan0\Desktop\GWO_CNN\dataset_experimental\test'
 
 
     #Ruta de acceso en HPC
-    #train_path = '../../Datasets/dataset_experimental/train'
-    #valid_path = '../../Datasets/dataset_experimental/valid'
-    #test_path = '../../Datasets/dataset_experimental/test'
+    train_path = '../../Datasets/dataset_experimental/train'
+    valid_path = '../../Datasets/dataset_experimental/valid'
+    test_path = '../../Datasets/dataset_experimental/test'
 
     train_data = datasets.ImageFolder(train_path, transform=transform)
     valid_data = datasets.ImageFolder(valid_path, transform=transform)
@@ -291,20 +294,15 @@ def ejecutarGWO(wolves,nwolves, maxIter):
     best_f1_per_iteration = []
     best_auc_per_iteration = []
 
-    # Definir la carpeta base donde se crearán las subcarpetas de cada ejecución
-    base_path = 'C:\\Users\\Abduzcan0\\Desktop\\GWO_CNN\\HistoryGWO'
+    best_model_save_path = 'Esquema1/Historial/best_model.pth'
 
-    # Crear una carpeta para esta ejecución dentro de HistoryGWO
-    execution_folder = crear_carpeta_ejecucion(base_path)
-
-    # Definir rutas para guardar datos
-    best_model_save_path = os.path.join(execution_folder, 'best_model.pth')
-    history_file_path = os.path.join(execution_folder, 'History_GWO.txt')
+    history_file_path = os.path.join('Esquema1/Historial/History_GWO.txt')
+    
 
     #best_model_save_path = '/content/drive/MyDrive/Colab Notebooks/HistoryGWO/best_model.pth'
     #history_file_path = os.path.join('/content/drive/MyDrive/Colab Notebooks/HistoryGWO', 'History_GWO.txt')
     #Ruta para HPC
-    #history_file_path = os.path.join('Esquema1/Historial', 'history.txt')
+    os.makedirs(os.path.dirname(history_file_path), exist_ok=True)
 
 
     with open(history_file_path, 'w') as f:
@@ -595,8 +593,8 @@ param_ranges = {
     "lr": (0.0001, 0.01)
     }
 # Parámetros de la ejecución
-nwolves = 10     # Tamaño de la población (lobos)
-maxIter = 10      # Número de iteraciones
+nwolves = 4     # Tamaño de la población (lobos)
+maxIter = 2      # Número de iteraciones
 
 # Inicialización de la población de lobos
 wolves = [initialize_population(param_ranges) for _ in range(nwolves)]
